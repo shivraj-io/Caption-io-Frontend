@@ -1,9 +1,6 @@
 // NEW FILE - Centralized API configuration
 export const API_CONFIG = {
-  // Use Vite-provided API host if available. Endpoints below include `/api` so
-  // BASE_URL should be the host only to avoid double `/api` when building full URLs.
-  BASE_URL: import.meta.env.VITE_API_URL || "http://localhost:5000",
-
+  BASE_URL: `${import.meta.env.VITE_API_URL}/api` || "http://localhost:5000/api",
   ENDPOINTS: {
     AUTH: {
       REGISTER: '/api/auth/register',
